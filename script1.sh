@@ -2,8 +2,8 @@ sys=$(arch)
 pro=$(nproc)
 mem=$(free -m)
 you=$(whoami)
-mac=$(ip link | grep “link/ether”| awk '{print $2}')
-las=$(last reboot)
+mac=$(ip link | grep "link/ether"| awk '{print $2}')
+las=$(who -b)
 echo "Arquitetura: $sys"
 echo "Numero de prosessadores: $pro"
 echo "Memoria ram: $mem"
